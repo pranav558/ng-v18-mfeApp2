@@ -1,0 +1,15 @@
+<div class="mfe2-container">
+  <h2 class="title">MFE 2 Container</h2>
+  <div class="card">
+    <div class="card-content">
+      <div class="data-info">Data coming from MFE 1</div>
+      <div class="data-field" *ngIf="mfe1Details().detail.name">
+        Name: {{mfe1Details().detail.name}}
+      </div>
+      <div class="data-field" *ngIf="mfe1Details().detail.email">
+        Email: {{mfe1Details().detail.email}}
+      </div>
+      <button class="send-button" (click)="sendData()">Send Data to MFE1 and Shell App</button>
+    </div>
+  </div>
+</div>
